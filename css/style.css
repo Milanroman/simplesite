@@ -1,0 +1,24 @@
+ #header { height:150px;
+           background: #222 url(/image/light_texture2224.jpg);
+           padding-top: 0px;
+     
+ }
+ 
+.form { float:right;
+        margin-top:20px;
+}
+
+#submit { margin-right:20px;
+}
+
+#logo { padding-top: 45px;
+        padding-left:150px;
+        font-family: Arial;
+        font-size: 45px;
+        color: yellow;
+}
+
+#home { height: 1800px;
+        background: #222 url(/image/background-gray-abstract-bright-2880x1800.jpg);
+       margin-top: 3px;
+}
