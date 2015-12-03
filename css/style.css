@@ -1,7 +1,5 @@
  #header { height:150px;
            background: #222 url(/image/light_texture2224.jpg);
-           padding-top: 0px;
-     
  }
  
 .form { float:right;
@@ -20,5 +18,21 @@
 
 #home { height: 1800px;
         background: #222 url(/image/background-gray-abstract-bright-2880x1800.jpg);
-       margin-top: 3px;
+}
+
+#home h1{ padding-top: 100px;
+          padding-left: 100px;
+          font-family: Arial;
+          font-size: 20px;
+}
+
+.max, .min { background-color: #DCDCDC;
+             width: 350px;
+             float: right;
+             margin-right: 20px;
+}
+
+.min { margin-top: 170px;
+
+    
 }
