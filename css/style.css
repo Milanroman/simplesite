@@ -45,19 +45,25 @@
        
 }
 
+
 #ul1 li { 
     display:inline-block;
     margin-right:60px;
-    padding-top:7px;
+  
+  
+    
 } 
 
 
 td {
+    border-bottom: 5px Solid #f2f2f2;
     height: 30px;
     text-align:left;
+    margin-bottom:3px;
 }
 
 #hourly{ 
+    
     background-color:#ffffff;
     float:left;
     width:715px;
@@ -67,9 +73,9 @@ td {
     padding-left:15px;
 }
 
-
+/*
 .max, .min { background-color:#DCDCDC;
              width:350px;
              float:right;
              margin-right:20px;
-}
+}*/
