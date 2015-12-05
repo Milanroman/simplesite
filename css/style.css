@@ -1,38 +1,75 @@
- #header { height:150px;
-           background: #222 url(/image/light_texture2224.jpg);
+ #header { 
+     height:150px;
+     background:#222 url(/image/light_texture2224.jpg);
+     width:1000px;
+     margin:0 auto;
+           
  }
  
-.form { float:right;
-        margin-top:20px;
+.form { 
+    float:right;
+    margin-top:20px;
+    margin-right:20px;
 }
 
-#submit { margin-right:20px;
+
+
+#logo { 
+    padding-top:35px;
+    padding-left:150px;
+    font-family:Open Sans;
+    font-size:45px;
+    color:yellow;
 }
 
-#logo { padding-top: 45px;
-        padding-left:150px;
-        font-family: Arial;
-        font-size: 45px;
-        color: yellow;
+#home { 
+    height:1000px;
+    width:1000px;
+    background:#f2f2f2;
+    /*#222 url(/image/background-gray-abstract-bright-2880x1800.jpg);*/
+    margin:0 auto;
+    margin-top:60px;
 }
 
-#home { height: 1800px;
-        background: #222 url(/image/background-gray-abstract-bright-2880x1800.jpg);
+
+#ul1 { 
+    background-color:#ffffff;
+    height:30px;
+    margin-top:16px;
+    margin-bottom:0px;
+    font-family:Open Sans;
+    font-size:12px;
+    padding-left:15px;
+    float:left;
+    width:700px;
+       
 }
 
-#home h1{ padding-top: 100px;
-          padding-left: 100px;
-          font-family: Arial;
-          font-size: 20px;
+#ul1 li { 
+    display:inline-block;
+    margin-right:60px;
+    padding-top:7px;
+} 
+
+
+td {
+    height: 30px;
+    text-align:left;
 }
 
-.max, .min { background-color: #DCDCDC;
-             width: 350px;
-             float: right;
-             margin-right: 20px;
+#hourly{ 
+    background-color:#ffffff;
+    float:left;
+    width:715px;
+    margin-top:10px;
+    font-family:Open Sans;
+    font-size:15px;
+    padding-left:15px;
 }
 
-.min { margin-top: 170px;
 
-    
+.max, .min { background-color:#DCDCDC;
+             width:350px;
+             float:right;
+             margin-right:20px;
 }

@@ -1,24 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
     <meta charset="UTF-8">
     <title>FindWeather</title>
     <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
 <body> 
-    <div id="header">
+    <header id="header">
         <div>
-            <form>
-                <input class="form" id="submit" type="submit" value="Пошук" />
-                <input class="form" type="text" placeholder="Місто..."/>
+            <form  class="form" name="search" action="#" method="get">
+	            <input type="text" name="q" placeholder="City..."><button type="submit">Search</button>
             </form>
             <h1 id="logo"><i>FindWeather</i></h1>
         </div>
-    </div>
+    </header>
     <div id="home">
-        <div>
+            <ul id="ul1">
+                <li>TIME</li>
+                <li>TEMP</li>
+                <li>FEELS</li>
+                <li>COND</li>
+                <li>PRECIP</li>
+                <li>WIND</li>
+                <li>HUMIDITY</li>
+            </ul>
+            <table id="hourly">
+                <tr>
+                    <td width="32px">2:15 PM</td>
+                    <td width="24px">7</td>
+                    <td width="15px">5</td>
+                    <td width="24px"><img src="partly-cloudy.svg"></img>  Partly Cloudy</td>
+                    <td width="30px">0%</td>
+                    <td width="15px">77%</td>
+                    <td width="30px">11 km/h</td>
+                </tr>
+                <tr>
+                    <td width="32px">3:15 PM</td>
+                    <td width="24px">7</td>
+                    <td width="15px">5</td>
+                    <td width="24px"><img src="partly-cloudy.svgz"></img>  Partly Cloudy</td>
+                    <td width="30px">0%</td>
+                    <td width="15px">77%</td>
+                    <td width="30px">11 km/h</td>
+                </tr>
+                <tr>
+                    <td width="32px">4:15 PM</td>
+                    <td width="24px">7</td>
+                    <td width="15px">5</td>
+                    <td width="24px"><img src="partly-cloudy.svgz"></img>  Partly Cloudy</td>
+                    <td width="30px">0%</td>
+                    <td width="15px">77%</td>
+                    <td width="30px">11 km/h</td>
+                </tr>
+                <tr>
+                    <td width="32px">5:15 PM</td>
+                    <td width="24px">7</td>
+                    <td width="15px">5</td>
+                    <td width="24px"><img src="partly-cloudy.svgz"></img>  Partly Cloudy</td>
+                    <td width="30px">0%</td>
+                    <td width="15px">77%</td>
+                    <td width="30px">11 km/h</td>
+                </tr>
+                <tr>
+                    <td width="32px">6:15 PM</td>
+                    <td width="24px">7</td>
+                    <td width="15px">5</td>
+                    <td width="24px"><img src="partly-cloudy.svgz"></img>  Partly Cloudy</td>
+                    <td width="30px">0%</td>
+                    <td width="15px">77%</td>
+                    <td width="30px">11 km/h</td>
+                </tr>
+            </table>
+                   <!--<div>
             <h1 id="your_city">Львів</h1>
-        </div>
+            </div>*/
         <div>
             <aside class="aside">
                 <div class="max">
@@ -55,7 +111,7 @@
                     </table>
                 </dive>    
             </aside>
-        </div>
+        </div>-->
     </div>    
 </body>
 </html>
