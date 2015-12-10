@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>FindWeather</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/weather.css" type="text/css" />
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
 <body> 
@@ -26,9 +26,7 @@
                 <td class="hourly_col_6">WIND</td>
                 <td class="hourly_col_7">HUMIDITY</td>
             </tr>
-        
-                <!--  
-                
+            <!--  
             <div>
                 <h1 id="your_city">Львів</h1>
             </div>
@@ -55,7 +53,7 @@
                 <td class="hourly_col_1">3 PM</td>
                 <td class="hourly_col_2">7 C</td>
                 <td class="hourly_col_3">5 C</td>
-                <td class="hourly_col_4"><img class="weather_image" src="/image/partly-cloudy.svgz" type="image/svg+xml"/>Partly Cloudy</td>
+                <td class="hourly_col_4"><img class="weather_image" src="/image/mostly-sunny.svgz" type="image/svg+xml"/>Mostly Sunny</td>
                 <td class="hourly_col_5">0%</td>
                 <td class="hourly_col_6">77%</td>
                 <td class="hourly_col_7">11 km/h</td>
@@ -82,60 +80,98 @@
                 <td class="hourly_col_1">6 PM</td>
                 <td class="hourly_col_2">7 C</td>
                 <td class="hourly_col_3">5 C</td>
-                <td class="hourly_col_4"><img class="weather_image" src="/image/partly-cloudy.svgz" type="image/svg+xml"/>Partly Cloudy</td>
+                <td class="hourly_col_4"><img class="weather_image" src="/image/mostly-sunny.svgz" type="image/svg+xml"/>Mostly Sunny</td>
                 <td class="hourly_col_5">0%</td>
                 <td class="hourly_col_6">77%</td>
                 <td class="hourly_col_7">11 km/h</td>
             </tr>
-        </table>
-      
-            <aside class="aside_max_min">
-                <div class="max">
-                    <h4>Нагарячіші міста на планеті</h4>
-                     <table>
-                        <tr>
-                            <td>-</td>
-                        </tr>
-                        <tr>
-                            <td>-</td>
-                        </tr>
-                        <tr>
-                            <td>-</td>
-                        </tr>
-                    </table>
-                </div> 
-                <div class="min">    
-                    <h4 class="">Найхолодніші міста на планеті</h4>
-                    <table>
-                         <tr>
-                            <td>-</td>
-                        </tr>
-                        <tr>
-                            <td>-</td>
-                        </tr>
-                        <tr>
-                            <td>-</td>
-                        </tr>
-                    </table>    
-                </div>
-            </aside>   
-            <aside class="aside_history">    
-                <h4>Історичні максимуми</h4>
+        </table>    
+        <aside class="aside_max_min">
+            <div class="max">
+                <h4>Нагарячіші міста на планеті</h4>
                 <table>
                     <tr>
-                        <td>Макс.</td>
-                        <td>....</td> 
-                        <td>Рік</td>
-                        <td>....</td>
+                        <td>Tirat Zvi, Israel +37 C</td>
                     </tr>
                     <tr>
-                        <td>Мін.</td>
-                        <td>....</td> 
-                        <td>Рік</td>
-                        <td>....</td>
+                        <td>Timbuktu, Mali +35 C</td>
+                    </tr>
+                    <tr>
+                        <td>Kebili, Tunisia +32 C</td>
                     </tr>
                 </table>
-            </aside>
+            </div> 
+            <div class="min">    
+                <h4 class="">Найхолодніші міста на планеті</h4>
+                <table>
+                    <tr>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>-</td>
+                    </tr>
+                </table>    
+            </div>
+        </aside>   
+        <aside class="aside_history">    
+            <h4>Історичні максимуми</h4>
+            <table>
+                <tr>
+                    <td>Макс.</td>
+                    <td>....</td> 
+                    <td>Рік</td>
+                    <td>....</td>
+                </tr>
+                <tr>
+                    <td>Мін.</td>
+                    <td>....</td> 
+                    <td>Рік</td>
+                    <td>....</td>
+                </tr>
+            </table>
+        </aside>
+        <div>
+            <table id="five_day">
+                <tr>
+                    <td class="day">FRI</td>
+                </tr>
+                <tr>
+                    <td width="200px"><img id="weather_day" src="/image/partly-cloudy.svgz" type="image/svg+xml"/></td>
+                    <td class="temp">3 C</td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td class="day">SAT</td>
+                </tr>
+                <tr>
+                    <td><img id="weather_day" src="/image/mostly-sunny.svgz" type="image/svg+xml"/></td>
+                    <td class="temp">4 C</td>
+                </tr>
+                <tr>
+                    <td class="day">SUN</td>
+                </tr>
+                <tr>
+                    <td><img id="weather_day" src="/image/partly-cloudy.svgz" type="image/svg+xml"/></td>
+                    <td class="temp">6 C</td>
+                </tr>
+                <tr>
+                    <td class="day">MON</td>
+                </tr>
+                <tr>
+                    <td><img id="weather_day" src="/image/partly-cloudy.svgz" type="image/svg+xml"/></td>
+                    <td class="temp">5 C</td>
+                </tr>
+                <tr>
+                    <td class="day">TUE</td>
+                </tr>
+                <tr>
+                    <td><img id="weather_day" src="/image/mostly-sunny.svgz" type="image/svg+xml"/></td>
+                    <td class="temp">3 C</td>
+                </tr>
+            </table>
         </div>
     </div>    
 </body>
