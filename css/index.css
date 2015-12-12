@@ -3,6 +3,7 @@
      background:#222 url(/image/light_texture2224.jpg);
      width:1200px;
      margin:0 auto;
+    
  }
  
 .form { 
@@ -19,12 +20,30 @@
     color:yellow;
 }
 
+#location{
+    margin-top:0px;
+    margin-left:280px;
+    padding-top:40px;
+    margin-bottom:10px;
+    padding-bottom:0px;
+}
+
+#city {
+    font-size:20px;
+}
+#date_hourly {
+    margin-top:0px;
+    padding-top:20px;
+    margin-bottom:10px;
+    padding-bottom:0px;
+    font-size:15px;
+}
+
 #home { 
-    height:1200px;
+    height:1100px;
     width:1200px;
     background:#f2f2f2;
     margin:0 auto;
-    margin-top:60px;
 }
 
 /*table_header { 
@@ -112,6 +131,19 @@ aside h4 {
 
 .aside_history {
     margin-top:43px;
+    height:722px;
+    
+}
+.max_ol{
+    width:270px;
+    font-size:12px;
+    font-family:Open Sans;
+}
+.max_red{
+    color:red;
+}
+.max_blue{
+    color:blue;
 }
 
 #five_day{
@@ -121,7 +153,8 @@ aside h4 {
     width:915px;
 }
 #weather_day {
-    width:70%;
+    width:15%;
+    padding-left:20px;
 }
 .temp {
     font-size:30px;

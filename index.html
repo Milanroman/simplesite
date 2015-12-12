@@ -15,6 +15,10 @@
             <h1 id="logo"><i>FindWeather</i></h1>
         </div>
     </header>
+    <div id="location">
+        <p id="city">Lviv, Ukraine</p>
+        <p id="date_hourly">Today</p>
+    </div>
     <div id="home">
         <table id="hourly">
             <tr id="table_header">
@@ -89,31 +93,19 @@
         <aside class="aside_max_min">
             <div class="max">
                 <h4>Нагарячіші міста на планеті</h4>
-                <table>
-                    <tr>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <td>-</td>
-                    </tr>
-                </table>
+                <ol class="max_ol">
+                    <li id="max1">Kebili, Tunisia <b class="max_red">+39 C</b></li>
+                    <li id="max2">Timbuktu, Mali <b class="max_red">+37 C</b></li>
+                    <li id="max3">Rub’ al Khali, Arabian Peninsula <b class="max_red">+34 C</b></li>
+                </ol>
             </div> 
             <div class="min">    
-                <h4 class="">Найхолодніші міста на планеті</h4>
-                <table>
-                    <tr>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <td>-</td>
-                    </tr>
-                </table>    
+                <h4>Найхолодніші міста на планеті</h4>
+                <ol class="min_ol">
+                    <li id="max1">Kebili, Tunisia <b class="max_blue">-39 C</b></li>
+                    <li id="max2">Timbuktu, Mali <b class="max_blue">-37 C</b></li>
+                    <li id="max3">Rub’ al Khali, Arabian Peninsula <b class="max_blue">-34 C</b></li>
+                </ol>
             </div>
         </aside>   
         <aside class="aside_history">    
@@ -134,12 +126,12 @@
             </table>
         </aside>
         <div>
-            <table id="day">
+            <table id="five_day">
                 <tr>
                     <td width="200px"><img id="weather_day" src="/image/partly-cloudy.svgz" type="image/svg+xml"/>-</td>
                 </tr>
                 <tr>
-                    <td><img id="weather_day" src="/image/sunny.svgz" type="image/svg+xml"/>-</td>
+                    <td><img id="weather_day" src="/image/mostly-sunny.svgz" type="image/svg+xml"/>-</td>
                 </tr>
                 <tr>
                     <td><img id="weather_day" src="/image/partly-cloudy.svgz" type="image/svg+xml"/>-</td>
@@ -148,7 +140,7 @@
                     <td><img id="weather_day" src="/image/partly-cloudy.svgz" type="image/svg+xml"/>-</td>
                 </tr>
                 <tr>
-                    <td><img id="weather_day" src="/image/sunny.svg" type="image/svg+xml"/>-</td>
+                    <td><img id="weather_day" src="/image/mostly-sunny.svgz" type="image/svg+xml"/>-</td>
                 </tr>
             </table>
         </div>
