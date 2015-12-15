@@ -5,21 +5,24 @@
     <title>FindWeather</title>
     <link rel="stylesheet" href="css/index.css" type="text/css" />
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <script src='//code.jquery.com/jquery-2.1.1.min.js'></script>
+    
 </head>
 <body> 
     <header id="header">
         <div>
             <form  class="form" name="search" action="#" method="get">
-	            <input type="text"  placeholder="City..."><button type="submit">Search</button>
+	            <input id="inputCityName" name="cityName" type="text"  placeholder="City...">
+	            <button id="btnGetWeather" type="button">Search</button>
             </form>
             <h1 id="logo"><i>FindWeather</i></h1>
         </div>
     </header>
-    <div id="location">
-        <p id="city">Lviv, Ukraine</p>
-        <p id="date_hourly">Today</p>
-    </div>
     <div id="home">
+        <div id="location">
+            <p><span id="city"></span></p>
+            <p id="date_hourly">Today</p>
+        </div>
         <table id="hourly">
             <tr id="table_header">
                 <td class="hourly_col_1">TIME</td>
@@ -27,8 +30,8 @@
                 <td class="hourly_col_3">FEELS</td>
                 <td class="hourly_col_4">COND</td>
                 <td class="hourly_col_5">PRECIP</td>
-                <td class="hourly_col_6">WIND</td>
-                <td class="hourly_col_7">HUMIDITY</td>
+                <td class="hourly_col_6">HUMIDITY</td>
+                <td class="hourly_col_7">WIND</td>
             </tr>
             <!--  
             <div>
@@ -45,49 +48,49 @@
             </ul>-->
         
             <tr id="data">
-                <td class="hourly_col_1">2:15 PM</td>
-                <td class="hourly_col_2">7 C</td>
+                <td class="hourly_col_1"><span id="time_now0"></span></td>
+                <td class="hourly_col_2"><span id="temp_now0"></span></td>
                 <td class="hourly_col_3">5 C</td>
                 <td class="hourly_col_4"><img class="weather_image" src="/image/partly-cloudy.svgz" type="image/svg+xml"/>Partly Cloudy</td>
-                <td class="hourly_col_5">0%</td>
-                <td class="hourly_col_6">77%</td>
-                <td class="hourly_col_7">11 km/h</td>
+                <td class="hourly_col_5"></td>
+                <td class="hourly_col_6"><span id="humidity0"></span>%</td>
+                <td class="hourly_col_7"><span id="wind0"></span> m/s</td>
             </tr>
             <tr id="data">
-                <td class="hourly_col_1">3 PM</td>
-                <td class="hourly_col_2">7 C</td>
+                <td class="hourly_col_1"><span id="time_now1"></span></td>
+                <td class="hourly_col_2"><span id="temp_now1"></span></td>
                 <td class="hourly_col_3">5 C</td>
                 <td class="hourly_col_4"><img class="weather_image" src="/image/partly-cloudy.svgz" type="image/svg+xml"/>Partly Cloudy</td>
                 <td class="hourly_col_5">0%</td>
-                <td class="hourly_col_6">77%</td>
-                <td class="hourly_col_7">11 km/h</td>
+                <td class="hourly_col_6"><span id="humidity1"></span>%</td>
+                <td class="hourly_col_7"><span id="wind1"></span> m/s</td>
             </tr>
             <tr id="data">
-                <td class="hourly_col_1">4 PM</td>
-                <td class="hourly_col_2">7 C</td>
+                <td class="hourly_col_1"><span id="time_now2"></span></td>
+                <td class="hourly_col_2"><span id="temp_now2"></span></td>
                 <td class="hourly_col_3">5 C</td>
                 <td class="hourly_col_4"><img class="weather_image" src="/image/partly-cloudy.svgz" type="image/svg+xml"/>Partly Cloudy</td>
                 <td class="hourly_col_5">0%</td>
-                <td class="hourly_col_6">77%</td>
-                <td class="hourly_col_7">11 km/h</td>
+                <td class="hourly_col_6"><span id="humidity2"></span>%</td>
+                <td class="hourly_col_7"><span id="wind2"></span> m/s</td>
             </tr>
             <tr id="data">
-                <td class="hourly_col_1">5 PM</td>
-                <td class="hourly_col_2">7 C</td>
+                <td class="hourly_col_1"><span id="time_now3"></span></td>
+                <td class="hourly_col_2"><span id="temp_now3"></span></td>
                 <td class="hourly_col_3">5 C</td>
                 <td class="hourly_col_4"><img class="weather_image" src="/image/partly-cloudy.svgz" type="image/svg+xml"/>Partly Cloudy</td>
                 <td class="hourly_col_5">0%</td>
-                <td class="hourly_col_6">77%</td>
-                <td class="hourly_col_7">11 km/h</td>
+                <td class="hourly_col_6"><span id="humidity3"></span>%</td>
+                <td class="hourly_col_7"><span id="wind3"></span> m/s</td>
             </tr>
             <tr id="data">
-                <td class="hourly_col_1">6 PM</td>
-                <td class="hourly_col_2">7 C</td>
+                <td class="hourly_col_1"><span id="time_now4"></span></td>
+                <td class="hourly_col_2"><span id="temp_now4"></span></td>
                 <td class="hourly_col_3">5 C</td>
                 <td class="hourly_col_4"><img class="weather_image" src="/image/partly-cloudy.svgz" type="image/svg+xml"/>Partly Cloudy</td>
                 <td class="hourly_col_5">0%</td>
-                <td class="hourly_col_6">77%</td>
-                <td class="hourly_col_7">11 km/h</td>
+                <td class="hourly_col_6"><span id="humidity4"></span>%</td>
+                <td class="hourly_col_7"><span id="wind4"></span> m/s</td>
             </tr>
         </table>    
         <aside class="aside_max_min">
@@ -144,7 +147,13 @@
                 </tr>
             </table>
         </div>
-    </div>    
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!--<script src="scripts/index.js"></script>-->
+    <script src="scripts/script.js"></script>
+    <script src="scripts/weatherByCity.js"></script>
+    <script src="scripts/weatherService.js"></script>
 </body>
 </html>
 
