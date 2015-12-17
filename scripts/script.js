@@ -28,8 +28,8 @@ $(function(){
                 moment(localTime).calendar(),	// Використовуємо moment.js для представлення дати
                 this.weather[0].description,
                 Math.round(this.main.temp) + '&deg;C',
-                this.wind.speed,
-                this.main.humidity
+                this.main.humidity,
+                this.wind.speed
             );
         });
         $('#city').html(city + ', <b>' + country + '</b>'); // Додаємо локацію на сторінку
@@ -41,7 +41,7 @@ $(function(){
                 '<td>' + '<img src="images/icons/'+ 
                   icon
                   +'.png" />' +'    '+ condition + '</td>'
-             + '<td>' + humidity + '</td>' + '<td>' + wind + '</td>'; 
+             + '<td>' + humidity+ '  %' + '</td>' + '<td>' + wind + ' m/s' + '</td>'; 
         hourly.insertRow(-1).innerHTML = markup; // Додаємо рядок до таблиці
     }
 
