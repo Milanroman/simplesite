@@ -26,68 +26,12 @@
             <tr id="table_header">
                 <td class="hourly_col_1">TIME</td>
                 <td class="hourly_col_2">TEMP</td>
-                <td class="hourly_col_3">COND</td>
-                <td class="hourly_col_4">HUMIDITY</td>
-                <td class="hourly_col_5">WIND</td>
+                <td class="hourly_col_3"></td>
+                <td class="hourly_col_4">COND</td>
+                <td class="hourly_col_5">HUMIDITY</td>
+                <td class="hourly_col_6">WIND</td>
             </tr>
-            
-            <!--  
-                ul id="ul">
-                <li>TIME</li>
-                <li id="temp">TEMP</li>
-                <li>FEELS</li>
-                <li>COND</li>
-                <li>PRECIP</li>
-                <li>WIND</li>
-                <li>HUMIDITY</li>
-            </ul>-->
-        
-            <!--<tr class="data">
-                <td class="hourly_col_1"><span id="time_now0"></span></td>
-                <td class="hourly_col_2"><span id="temp_now0"></span></td>
-                <td class="hourly_col_3">5 C</td>
-                <td class="hourly_col_4"><img class="weather_image" src="/image/partly-cloudy.svgz" type="image/svg+xml"/>Partly Cloudy</td>
-                <td class="hourly_col_5"></td>
-                <td class="hourly_col_6"><span id="humidity0"></span>%</td>
-                <td class="hourly_col_7"><span id="wind0"></span> m/s</td>
-            </tr>
-            <trclass="data">
-                <td class="hourly_col_1"><span id="time_now1"></span></td>
-                <td class="hourly_col_2"><span id="temp_now1"></span></td>
-                <td class="hourly_col_3">5 C</td>
-                <td class="hourly_col_4"><img class="weather_image" src="/image/partly-cloudy.svgz" type="image/svg+xml"/>Partly Cloudy</td>
-                <td class="hourly_col_5">0%</td>
-                <td class="hourly_col_6"><span id="humidity1"></span>%</td>
-                <td class="hourly_col_7"><span id="wind1"></span> m/s</td>
-            </tr>
-            <tr class="data">
-                <td class="hourly_col_1"><span id="time_now2"></span></td>
-                <td class="hourly_col_2"><span id="temp_now2"></span></td>
-                <td class="hourly_col_3">5 C</td>
-                <td class="hourly_col_4"><img class="weather_image" src="/image/partly-cloudy.svgz" type="image/svg+xml"/>Partly Cloudy</td>
-                <td class="hourly_col_5">0%</td>
-                <td class="hourly_col_6"><span id="humidity2"></span>%</td>
-                <td class="hourly_col_7"><span id="wind2"></span> m/s</td>
-            </tr>
-            <tr class="data">
-                <td class="hourly_col_1"><span id="time_now3"></span></td>
-                <td class="hourly_col_2"><span id="temp_now3"></span></td>
-                <td class="hourly_col_3">5 C</td>
-                <td class="hourly_col_4"><img class="weather_image" src="/image/partly-cloudy.svgz" type="image/svg+xml"/>Partly Cloudy</td>
-                <td class="hourly_col_5">0%</td>
-                <td class="hourly_col_6"><span id="humidity3"></span>%</td>
-                <td class="hourly_col_7"><span id="wind3"></span> m/s</td>
-            </tr>
-            <tr class="data">
-                <td class="hourly_col_1"><span id="time_now4"></span></td>
-                <td class="hourly_col_2"><span id="temp_now4"></span></td>
-                <td class="hourly_col_3">5 C</td>
-                <td class="hourly_col_4"><img class="weather_image" src="/image/partly-cloudy.svgz" type="image/svg+xml"/>Partly Cloudy</td>
-                <td class="hourly_col_5">0%</td>
-                <td class="hourly_col_6"><span id="humidity4"></span>%</td>
-                <td class="hourly_col_7"><span id="wind4"></span> m/s</td>
-            </tr>-->
-        </table>    
+        </table> 
         <aside class="aside_max_min">
             <div class="max">
                 <h4>Нагарячіші міста на планеті</h4>
@@ -106,48 +50,17 @@
                 </ol>
             </div>
         </aside>   
-        <aside class="aside_history">    
-            <h4>Історичні максимуми</h4>
-            <table>
-                <tr>
-                    <td>Макс.</td>
-                    <td>....</td> 
-                    <td>Рік</td>
-                    <td>....</td>
-                </tr>
-                <tr>
-                    <td>Мін.</td>
-                    <td>....</td> 
-                    <td>Рік</td>
-                    <td>....</td>
-                </tr>
-            </table>
-        </aside>
-        <div>
-            <!--<table id="five_day">
-                <tr>
-                    <td width="200px"><img id="weather_day" src="/image/partly-cloudy.svgz" type="image/svg+xml"/>-</td>
-                </tr>
-                <tr>
-                    <td><img id="weather_day" src="/image/mostly-sunny.svgz" type="image/svg+xml"/>-</td>
-                </tr>
-                <tr>
-                    <td><img id="weather_day" src="/image/partly-cloudy.svgz" type="image/svg+xml"/>-</td>
-                </tr>
-                <tr>
-                    <td><img id="weather_day" src="/image/partly-cloudy.svgz" type="image/svg+xml"/>-</td>
-                </tr>
-                <tr>
-                    <td><img id="weather_day" src="/image/mostly-sunny.svgz" type="image/svg+xml"/>-</td>
-                </tr>
-            </table>-->
-        </div>
+        <table id="dayly">
+        </table> 
     </div>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
+    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>-->
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="scripts/moment-with-locales.js"></script>
     <script src="scripts/script.js"></script>
     <script src="scripts/weatherByCity.js"></script>
     <script src="scripts/weatherService.js"></script>
+    <script src="scripts/weatherServiceDays.js"></script>
+    <script src="scripts/scriptDays.js"></script>
 </body>
 </html>
 

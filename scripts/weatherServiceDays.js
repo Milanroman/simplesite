@@ -1,32 +1,33 @@
-function getWeatherData (lang, fnOK, fnError) {
-    navigator.geolocation.getCurrentPosition(locSuccess, locError);
 
-    function locSuccess(position) {
+function getWeatherDataDays (lang, fnOKDays, fnErrorDay) {
+    navigator.geolocation.getCurrentPosition(locSuccessDay, locErrorDays);
+
+    function locSuccessDay(position) {
         // Check cache
-        var cache = localStorage['weatherCache'] && JSON.parse(localStorage['weatherCache']);
-        var currDate = new Date();
+        var cacheDays = localStorage['weatherCacheDays'] && JSON.parse(localStorage['weatherCacheDays']);
+        var currDateDays = new Date();
         // If the cache is newer than 1 minutes, use the cache
-        if (cache && cache.timestamp && cache.timestamp > currDate.getTime() - 1*60*1000){
-            fnOK.call(this, cache.data);
+        if (cacheDays && cacheDays.timestamp && cacheDays.timestamp > currDateDays.getTime() - 1*60*1000){
+            fnOKDays.call(this, cacheDays.data);
         } else {
             $.getJSON(
-                'http://api.openweathermap.org/data/2.5/forecast?lat=' + position.coords.latitude + '&lon=' +
+                'http://api.openweathermap.org/data/2.5/forecast/daily?lat=' + position.coords.latitude + '&lon=' +
                 position.coords.longitude + '&cnt=6&units=metric&APPID=19e6212ba1a15130d764c8ce642a543b' + '&lang=' + lang + '&callback=?',
                 
                 function (response) {
                     // Store the cache
-                    localStorage.weatherCache = JSON.stringify({
+                    localStorage.weatherCacheDays = JSON.stringify({
                         timestamp: (new Date()).getTime(),	// getTime() returns milliseconds
                         data: response
                     });
                     // Call the function again
-                    locSuccess(position);
+                    locSuccessDay(position);
                 }
             );
         }
     }
 
-    function locError(error) {
+    function locErrorDays(error) {
         var message = 'Location error. ';
         switch(error.code) {
             case error.TIMEOUT:
@@ -42,6 +43,6 @@ function getWeatherData (lang, fnOK, fnError) {
                 message += 'An unknown error occured!';
                 break;
         }
-        fnError.call(this, message);
+        fnErrorDay.call(this, message);
     }
 }

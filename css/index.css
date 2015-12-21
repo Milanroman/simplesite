@@ -1,6 +1,6 @@
  #header { 
      height:150px;
-     background:#222 url(image/light_texture2224.jpg);
+     background:#222 url(/images/light_texture2224.jpg);
      width:1200px;
      margin:0 auto;
     
@@ -14,25 +14,19 @@
 
 #logo { 
     padding-top:35px;
-    padding-left:150px;
+    padding-left:100px;
     font-family:Open Sans;
-    font-size:45px;
+    font-size:35px;
     color:yellow;
 }
-#location{
-    margin-top:10px;
-}
+
 #city {
-   
-    font-size:20px;
+    font-family:Open Sans;
+    margin-left:80px;
+    font-size:17px;
+    color:blue;
 }
-#date_hourly {
-    margin-top:0px;
-    padding-top:20px;
-    margin-bottom:10px;
-    padding-bottom:0px;
-    font-size:15px;
-}
+
 
 #home { 
     height:1100px;
@@ -41,43 +35,43 @@
     margin:0 auto;
 }
 
-/*table_header { 
+#hourly  { 
     background-color:#ffffff;
-    float:left;
-    width:815px;
-    margin-top:10px;
-    font-family:Open Sans;
-    font-size:12px;
-    padding-left:15px;
-    border-collapse: collapse;
-}
-
-#table_headers td {
-    padding:0px;
-    border-bottom: 5px Solid #f2f2f2;
-    height: 30px;
-    text-align:center;
-    margin-bottom:3px;
-}*/
-
-#hourly { 
-    background-color:#ffffff;
+    margin-left:5px;
     float:left;
     width:915px;
     margin-top:5px;
     text-align:center;
     font-family:Open Sans;
-    font-size:15px;
+    font-size:13px;
     border-collapse: collapse;
     height:255px;
 }
+    
+#dayly  {
+    margin-top:15px;
+    margin-left:25px;
+    float:left;
+    width:1150px;
+    background-color:#ffffff;
+    text-align:center;
+    font-family:Open Sans;
+    font-size:18px;
+    border-collapse: collapse;
+    height:255px;
+}
+
+#dayly img {
+    width:45%;
+}  
+
 #table_header {
     font-size:12px;
     height:30px;
     border-bottom: 5px Solid #f2f2f2;
 }
 
-.data {
+#dayly tr {
     padding:3px;
     border-bottom: 3px Solid #f2f2f2;
     
@@ -117,18 +111,13 @@ aside {
     font-family:Open Sans;
     font-size:12px;
     width:270px;
-    height:252px;
+    height:369px;
 }
 
 aside h4 {
     text-align:center;
 }
 
-.aside_history {
-    margin-top:43px;
-    height:722px;
-    
-}
 .max_ol{
     width:270px;
     font-size:12px;
@@ -141,16 +130,6 @@ aside h4 {
     color:blue;
 }
 
-#five_day{
-    margin-top:40px;
-    float:left;
-    background-color:#ffffff;
-    width:915px;
-}
-#weather_day {
-    width:15%;
-    padding-left:20px;
-}
 .temp {
     font-size:30px;
 }

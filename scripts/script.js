@@ -1,7 +1,12 @@
 $(function(){
+    
+    moment.locale('uk');
+    
     $('#btnGetWeather').click(function () {
         getWeatherByCity('ua', dataReceived, showError, $('#inputCityName').val());
+        
     });
+    
     $('#inputCityName').keypress(function(e) {
         var ENTER_KEY_CODE = 13;
         if ( e.which === ENTER_KEY_CODE ) 
@@ -13,7 +18,6 @@ $(function(){
     
     getWeatherData('ua', dataReceived, showError);
     
-
     function dataReceived(data) {
         var offset = (new Date()).getTimezoneOffset()*60*1000; // Відхилення від UTC в секундах
         var city = data.city.name;
@@ -34,14 +38,15 @@ $(function(){
         });
         $('#city').html(city + ', <b>' + country + '</b>'); // Додаємо локацію на сторінку
     }
+    
+    
 
-    function addWeather(icon, dt, condition, temp, humidity, wind){
+    function addWeather(icon, td, condition, temp, humidity, wind){
         var markup = '<tr>'+
-                '<td>' + dt + '</td>' + '<td>' + temp + '</td>' +
+                '<td>' + td + '</td>' + '<td>' + temp + '</td>' +
                 '<td>' + '<img src="images/icons/'+ 
-                  icon
-                  +'.png" />' +'    '+ condition + '</td>'
-             + '<td>' + humidity+ '  %' + '</td>' + '<td>' + wind + ' m/s' + '</td>'; 
+                  icon +'.png" />' + '</td>' + '<td>' + condition  + '</td>' 
+             + '<td>' + humidity+ '  %' + '</td>' + '<td>' + wind + ' m/s' + '</td>' + '</tr>';  
         hourly.insertRow(-1).innerHTML = markup; // Додаємо рядок до таблиці
     }
 
