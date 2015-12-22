@@ -1,5 +1,5 @@
 
-function getWeatherDataDays (lang, fnOKDays, fnErrorDay) {
+function getWeatherDataDays (lang, fnOKDays, fnErrorDays) {
     navigator.geolocation.getCurrentPosition(locSuccessDay, locErrorDays);
 
     function locSuccessDay(position) {
@@ -28,21 +28,21 @@ function getWeatherDataDays (lang, fnOKDays, fnErrorDay) {
     }
 
     function locErrorDays(error) {
-        var message = 'Location error. ';
+        var messagedays = 'Location error. ';
         switch(error.code) {
             case error.TIMEOUT:
-                message += 'A timeout occured! Please try again!';
+                messagedays += 'A timeout occured! Please try again!';
                 break;
             case error.POSITION_UNAVAILABLE:
-                message += 'We can\'t detect your location. Sorry!';
+                messagedays += 'We can\'t detect your location. Sorry!';
                 break;
             case error.PERMISSION_DENIED:
-                message += 'Please allow geolocation access for this to work.';
+                messagedays += 'Please allow geolocation access for this to work.';
                 break;
             case error.UNKNOWN_ERROR:
-                message += 'An unknown error occured!';
+                messagedays += 'An unknown error occured!';
                 break;
         }
-        fnErrorDay.call(this, message);
+        fnErrorDays.call(this, messagedays);
     }
 }

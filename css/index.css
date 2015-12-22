@@ -50,9 +50,9 @@
     
 #dayly  {
     margin-top:15px;
-    margin-left:25px;
+    margin-left:15px;
     float:left;
-    width:1150px;
+    width:1170px;
     background-color:#ffffff;
     text-align:center;
     font-family:Open Sans;
@@ -116,6 +116,9 @@ aside {
 
 aside h4 {
     text-align:center;
+}
+li{
+    padding:10px;
 }
 
 .max_ol{
