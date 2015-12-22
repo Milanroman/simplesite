@@ -67,9 +67,9 @@ $(function(){
     }
     
     function addWeatherDays(icon, td, condition, temp, humidity){
-        var markupdays = '<tr>' +
+        var markupdays = '<tr>' 
                 + '<td>' + '<img src="images/icons/' + 
-                icon + '.png"/>'  + '</td>' + '<td>' + temp + '</td>' + '<td>' + td + '</td>' + 
+                icon + '.png"/>'  + '</td>' + '<td>' + temp + '</td>' + '<td>' + td + '</td>' 
                 + '<td>' + condition  + '</td>' + '<td>' + humidity + '  %' + '</td>' + '</tr>';  
         dayly.insertRow(-1).innerHTML = markupdays;// Додаємо рядок до таблиці
     }

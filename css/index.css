@@ -1,6 +1,6 @@
  #header { 
      height:150px;
-     background:#222 url(/images/light_texture2224.jpg);
+     background:#1E90FF; 
      width:1200px;
      margin:0 auto;
     
@@ -29,7 +29,7 @@
 
 
 #home { 
-    height:1100px;
+    height:1170px;
     width:1200px;
     background:#f2f2f2;
     margin:0 auto;
@@ -62,7 +62,7 @@
 }
 
 #dayly img {
-    width:45%;
+    width:75%;
 }  
 
 #table_header {
