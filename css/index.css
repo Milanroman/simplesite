@@ -1,15 +1,14 @@
  #header { 
-     height:150px;
-     background:#1E90FF; 
-     width:1200px;
-     margin:0 auto;
-    
- }
+    height:150px;
+    background:#1E90FF; 
+    width:1200px;
+    margin:0 auto;
+}
  
 .form { 
-     float:right;
-     margin-top:20px;
-     margin-right:20px;
+    float:right;
+    margin-top:20px;
+    margin-right:20px;
 }
 
 #logo { 
@@ -117,6 +116,7 @@ aside {
 aside h4 {
     text-align:center;
 }
+
 li{
     padding:10px;
 }
@@ -126,6 +126,7 @@ li{
     font-size:12px;
     font-family:Open Sans;
 }
+
 .max_red{
     color:red;
 }
@@ -133,7 +134,4 @@ li{
     color:blue;
 }
 
-.temp {
-    font-size:30px;
-}
-           
+
